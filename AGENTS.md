@@ -30,7 +30,7 @@
 
 - [ ] 원본 PPT 파일에서 실제 색상값 확인 후 `tokens.json` 보정 (현재 값은 추정치)
 - [ ] Pretendard가 원본 느낌과 맞는지 확인. 아니면 `font.family.*` 순서 조정
-- [ ] GitHub 저장소 생성, Settings → Pages → Source를 GitHub Actions로 설정, 첫 배포 확인
+- [x] 기존 GitHub 저장소에 통합, Pages Source를 GitHub Actions로 설정, 첫 배포 확인
 - [ ] 필요하면 레이아웃 추가 (예: 그래프+해석 강조형, 코드 슬라이드)
 
 ## 2026-10-08 이어받기 결과
@@ -41,7 +41,8 @@
 - 승인받은 `npm ci --ignore-scripts` 후 `npm run build` 성공: 9슬라이드 HTML/PDF와 덱 목록 생성. PDF용 Chrome은 제한된 환경 밖에서 실행해야 했다.
 - 설치 시 npm이 취약점 12건(낮음 2, 보통 1, 높음 9)을 보고했다. 의존성 버전은 변경하지 않았다.
 - 배포 대상: `https://github.com/CausalInferenceLab/data-still-does-not-speak.git`. 기존 README와 소개 이미지를 보존해야 한다.
-- 초기 `gh` 인증 오류는 사용자 재인증으로 해결했다. 저장소 관리자/쓰기 권한을 확인했고, Pages는 아직 생성되지 않아 GitHub Actions 방식으로 첫 배포를 진행한다.
+- 사용자 재인증 후 PR #1을 main에 반영했다. GitHub Actions 빌드/배포 성공(run `37690702740`), 공개 목록/9슬라이드 HTML/PDF 접속 검증 완료.
+- 배포 주소: `https://causalinferencelab.github.io/data-still-does-not-speak/`. 원본 폴더의 `origin`도 대상 저장소로 연결했다.
 
 ## 작업 규칙
 
