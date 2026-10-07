@@ -1,0 +1,4 @@
+{
+  "markdown.marp.themes": ["./themes/causal-lab.css"],
+  "markdown.marp.enableHtml": true
+}

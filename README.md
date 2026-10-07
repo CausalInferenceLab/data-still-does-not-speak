@@ -254,3 +254,8 @@ ChatGPT·Claude·Gemini 등 AI 도구를 활용할 수 있습니다. 코드와 �
 [가짜연구소](https://pseudo-lab.com/) · [가짜연구소 인과추론팀](https://github.com/CausalInferenceLab)
 
 이 프로젝트는 가짜연구소 13기 인과추론팀 프로젝트입니다. 함께 분석하고 질문을 나누는 참여자와 공개 자료를 제공한 저자·커뮤니티에 감사합니다. README는 [가짜연구소 빌더 템플릿](https://github.com/Pseudo-Lab/builder-template)을 바탕으로 구성했습니다.
+
+
+## 발표 슬라이드 작성
+
+마크다운으로 Causal-Lab 디자인의 HTML/PDF 발표 자료를 만들 수 있습니다. [작성 안내](SLIDES.md)와 [디자인 규칙](DESIGN.md)을 참고하세요.

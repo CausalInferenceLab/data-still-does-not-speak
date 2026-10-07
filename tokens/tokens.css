@@ -1,0 +1,47 @@
+/* 자동 생성 파일 — tokens/tokens.json을 수정하고 `npm run tokens` 실행 */
+:root {
+  --color-brand-peach: #F4B183;
+  --color-brand-blue: #8FAADC;
+  --color-brand-navy: #002060;
+  --color-brand-logo: #2E2A6E;
+  --color-text-primary: #000000;
+  --color-text-muted: #7F7F7F;
+  --color-text-footer: #595959;
+  --color-text-dim: #C9D4EA;
+  --color-text-link: #0563C1;
+  --color-text-on-band: #000000;
+  --color-surface-page: #FFFFFF;
+  --color-table-border: #4472C4;
+  --font-family-display: Pretendard, "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+  --font-family-body: Pretendard, "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+  --font-size-cover-title: 48px;
+  --font-size-cover-subtitle: 28px;
+  --font-size-presenter: 26px;
+  --font-size-title: 38px;
+  --font-size-section: 26px;
+  --font-size-body: 23px;
+  --font-size-table: 17px;
+  --font-size-page-number: 15px;
+  --font-size-footer: 10px;
+  --font-line-height-body: 1.6;
+  --size-slide-width: 1280px;
+  --size-slide-height: 720px;
+  --size-padding-x: 52px;
+  --size-padding-top: 28px;
+  --size-padding-bottom: 56px;
+  --size-accent-bar-width: 24px;
+  --size-accent-bar-height: 42px;
+  --size-split-rule-content-width: 752px;
+  --size-split-rule-content-height: 6px;
+  --size-split-rule-cover-width: 754px;
+  --size-split-rule-cover-height: 7px;
+  --size-cover-band-top: 18.5%;
+  --size-cover-band-bottom: 18.5%;
+  --size-logo-content: 64px;
+  --size-logo-cover: 74px;
+  --size-list-indent-section: 118px;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "marketing-science-slides",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tokens": "node scripts/sync-tokens.mjs",
+    "dev": "marp --no-stdin --server ./slides",
+    "build:html": "marp --no-stdin",
+    "build:pdf": "marp --no-stdin --pdf",
+    "build": "npm run tokens && npm run build:html && npm run build:pdf && node scripts/copy-assets.mjs && node scripts/build-index.mjs"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.5.1"
+  }
+}
