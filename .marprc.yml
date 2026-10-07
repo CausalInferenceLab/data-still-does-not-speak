@@ -1,0 +1,6 @@
+# Marp CLI 설정 — `npm run build` / `npm run build:pdf`
+inputDir: ./slides
+output: ./dist
+themeSet: ./themes
+html: true
+allowLocalFiles: true
