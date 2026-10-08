@@ -179,3 +179,14 @@ OT PDF의 폰트 리소스에서 MalgunGothic / MalgunGothicBold와 NanumSquareR
 1. `tokens/tokens.json`의 `$value`를 수정합니다.
 2. `npm run tokens` → `tokens/tokens.css`와 `themes/causal-lab.css`의 `/* tokens:start */ … /* tokens:end */` 구간이 다시 생성됩니다. `assets/logo-*.png`도 이때 테마에 data URI로 들어갑니다.
 3. 두 파일을 함께 커밋합니다. CI가 동기화 누락을 검사합니다.
+
+## 7. 세로형 보고서
+
+`reports/<주제>/index.html`은 슬라이드와 별도로 읽는 정적 보고서입니다. `reports/dataset-candidates/`가 첫 예시입니다.
+
+- 색·서체는 공통 `tokens/tokens.css`를 참조합니다. 토큰과 Marp 테마를 변경하지 않습니다.
+- 흰 본문, 검정 텍스트, navy 밑줄 섹션 제목, 제목 아래 peach | blue 반반 장식을 유지합니다.
+- 표는 기존 blue 테두리와 굵은 열 제목을 사용합니다. 보고서에서는 전체 본문 폭을 쓰고 수치는 오른쪽 정렬합니다.
+- 화면 본문은 17px, 표는 15px로 읽기 크기를 조정합니다. 모바일은 문서 폭을 유지하고 표 안에서 가로 스크롤합니다.
+- A4 인쇄 CSS는 반복 표 헤더, 행 분할 방지, 데이터셋별 새 페이지를 지정합니다. 별도 PDF·Word 출력은 생성하지 않습니다.
+- `scripts/build-index.mjs`가 보고서의 `index.html`·`report.css`와 공통 토큰만 `dist/`에 복사하고 자료 목록에 연결합니다.

@@ -259,3 +259,14 @@ ChatGPT·Claude·Gemini 등 AI 도구를 활용할 수 있습니다. 코드와 �
 ## 발표 슬라이드 작성
 
 마크다운으로 Causal-Lab 디자인의 HTML/PDF 발표 자료를 만들 수 있습니다. [작성 안내](SLIDES.md)와 [디자인 규칙](DESIGN.md)을 참고하세요.
+
+
+## 데이터셋 후보 보고서
+
+Hillstrom, Online Retail II, Criteo v2.1의 배경·전체 변수표·수치 분포·한계·출처를 소개합니다. 상세 분석 방법과 지표 정의는 러너들이 결정합니다.
+
+- [HTML 보고서 읽기](https://causalinferencelab.github.io/data-still-does-not-speak/reports/dataset-candidates/)
+- [저장소에서 보고서 찾기](reports/dataset-candidates/README.md)
+- [보고서 폴더 안내](reports/README.md)
+
+보고서는 `reports/<주제>/index.html`과 CSS로 관리하며, `npm run build:reports`로 PDF 생성 없이 보고서와 자료 목록을 빌드합니다.
