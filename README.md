@@ -4,6 +4,7 @@
 >
 > | 하고 싶은 일 | 가는 곳 |
 > | --- | --- |
+> | 러너로 처음 시작 · AI에게 붙여넣을 문장 | [러너 시작 안내](START_HERE.md) |
 > | GitHub이 처음이라 AI 튜터와 단계별로 제출 연습 | [TUTOR.md](TUTOR.md) |
 > | 내 주차 과제 제출 | [assignments/README.md](assignments/README.md) · 처음 해보면 [TUTOR.md](TUTOR.md) |
 > | 챕터 오너로 발표 내용 정리 | [chapters/README.md](chapters/README.md) |
