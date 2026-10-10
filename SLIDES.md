@@ -23,6 +23,18 @@ GitHub Actions가 빌드해서 GitHub Pages에 올립니다.
 - `slides/<덱 폴더>/`에는 **`index.md`만** 둡니다. 이미지는 `img/`에 둡니다.
 - 챕터 노트와 과제 같은 일반 `.md`는 `chapters/`와 `assignments/`에 둡니다. 이 폴더들은 빌드 입력이 아니며 HTML로 자동 변환되지 않습니다. GitHub 문서 화면에서 읽습니다.
 - Pages의 덱 목록 페이지는 `slides/<덱 폴더>/index.md`가 있는 폴더를 찾아 만듭니다. 이 파일 이름이 다르면 목록에 나타나지 않습니다.
+
+## 파일 배치 자동 검사
+
+PR의 CI와 HTML·PDF·OT·보고서 빌드, 로컬 미리보기 시작 전에 같은 파일 배치 검사를 실행합니다.
+
+- 발표 폴더에는 파일 이름이 정확히 `index.md`인 파일이 있어야 합니다.
+- `slides/<발표 폴더>/index.md` 외의 마크다운은 허용하지 않습니다. `README.md`, `INDEX.MD`, `img/notes.md`나 `.markdown`·`.mdown`·`.markdn` 파일도 차단합니다.
+- `chapters/`와 `assignments/`의 `README.md`, 이미지·CSS·JavaScript 같은 발표 보조 파일은 이 규칙에 걸리지 않습니다.
+
+오류에는 잘못된 파일 경로와 수정 방법이 나옵니다. 발표 파일은 `index.md`로 바꾸고, 일반 노트·과제는 해당 폴더로 옮기는 변경을 제안하세요. AI는 파일을 임의로 삭제하지 않고 사용자가 의도한 내용을 확인합니다. 같은 PR 브랜치에서 수정·commit하면 CI가 다시 검사합니다.
+
+Node가 있는 로컬 환경에서는 `npm run check:slides`로 검사만 실행할 수 있습니다. 검증 스모크 테스트는 `npm test`입니다. GitHub 웹만 쓰는 참여자는 설치할 필요 없이 PR의 CI 결과를 확인하면 됩니다.
 - Pages에는 PR이 main에 머지된 뒤에 올라갑니다. PR을 열었다고 Pages에 바로 보이지 않습니다.
 
 ## 발표 자료 올리기

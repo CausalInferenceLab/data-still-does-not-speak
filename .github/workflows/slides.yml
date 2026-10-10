@@ -25,6 +25,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm test
       # 토큰이 테마에 반영됐는지 확인 (tokens.json만 고치고 sync를 잊은 PR 방지)
       - run: npm run tokens && git diff --exit-code tokens/tokens.css themes/causal-lab.css
       - run: npm run build

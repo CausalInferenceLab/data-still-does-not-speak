@@ -3,13 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --test scripts/check-slides.test.mjs",
+    "check:slides": "node scripts/check-slides.mjs",
     "tokens": "node scripts/sync-tokens.mjs",
-    "dev": "marp --no-stdin --server ./slides",
-    "build:html": "marp --no-stdin",
-    "build:pdf": "marp --no-stdin --pdf",
-    "build:reports": "node scripts/build-index.mjs",
-    "build": "npm run tokens && npm run build:html && npm run build:pdf && node scripts/copy-assets.mjs && npm run build:ot-live && node scripts/build-index.mjs",
-    "build:ot-live": "node slides/ot-live/build-live.mjs"
+    "dev": "npm run check:slides && marp --no-stdin --server ./slides",
+    "build:html": "npm run check:slides && marp --no-stdin",
+    "build:pdf": "npm run check:slides && marp --no-stdin --pdf",
+    "build:reports": "npm run check:slides && node scripts/build-index.mjs",
+    "build": "npm run check:slides && npm run tokens && npm run build:html && npm run build:pdf && node scripts/copy-assets.mjs && npm run build:ot-live && node scripts/build-index.mjs",
+    "build:ot-live": "npm run check:slides && node slides/ot-live/build-live.mjs"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.5.1"
