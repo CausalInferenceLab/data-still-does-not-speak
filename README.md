@@ -1,6 +1,6 @@
 ![데이터는 여전히 말하지 않는다 프로젝트 소개](project-introduction.png)
 
-([발표 자료](https://causalinferencelab.github.io/data-still-does-not-speak/ot-live/))
+[발표 자료 전체 목록](https://causalinferencelab.github.io/data-still-does-not-speak/) · [OT 자료](https://causalinferencelab.github.io/data-still-does-not-speak/ot-live/)
 
 > **처음 오셨나요? 어디서 시작할지 찾아보세요.**
 >
