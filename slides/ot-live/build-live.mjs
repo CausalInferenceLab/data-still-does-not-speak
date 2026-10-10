@@ -1,0 +1,15 @@
+import {readFileSync,writeFileSync,cpSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const base=path.dirname(fileURLToPath(import.meta.url));
+const root=path.resolve(base,'../..');
+const output=path.join(root,'dist/ot-live/index.html');
+execFileSync(path.join(root,'node_modules/.bin/marp'),['--no-stdin','--no-config','--html','--theme',path.join(root,'themes/causal-lab.css'),'--template','bare',path.join(base,'index.md'),'-o',output],{cwd:root,stdio:'inherit'});
+let html=readFileSync(output,'utf8').replace('<html lang="C">','<html lang="ko">').replace(/lang="C"/g,'lang="ko"');
+const toolbar=`<div id="ot-toolbar"><button id="ot-prev">← 이전</button><span id="ot-page"></span><button id="ot-next">다음 →</button><button id="ot-edit">발표 모드</button></div>`;
+html=html.replace('</head>','<style id="ot-live-style">'+readFileSync(path.join(base,'live.css'),'utf8')+'</style></head>');
+html=html.replace('</body>',toolbar+'<script id="ot-live-script">'+readFileSync(path.join(base,'live-editor.js'),'utf8')+'</script></body>');
+writeFileSync(output,html);
+cpSync(path.join(base,'img'),path.join(path.dirname(output),'img'),{recursive:true});
+console.log('Live editor added: '+output);

@@ -8,7 +8,8 @@
     "build:html": "marp --no-stdin",
     "build:pdf": "marp --no-stdin --pdf",
     "build:reports": "node scripts/build-index.mjs",
-    "build": "npm run tokens && npm run build:html && npm run build:pdf && node scripts/copy-assets.mjs && node scripts/build-index.mjs"
+    "build": "npm run tokens && npm run build:html && npm run build:pdf && node scripts/copy-assets.mjs && npm run build:ot-live && node scripts/build-index.mjs",
+    "build:ot-live": "node slides/ot-live/build-live.mjs"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.5.1"

@@ -1,0 +1,59 @@
+@media screen {
+html,body {background:#1c1c1c;height:100%;margin:0;overflow:hidden;scroll-snap-type:none;}
+section[data-size]{--font-size-body:18pt;--font-size-section:24pt;--font-size-table:18pt;--font-size-footer:14pt;--font-size-page-number:14pt;--font-size-cover-subtitle:24pt;--font-size-presenter:24pt;--size-padding-bottom:72px;line-height:1.5;}
+section[data-size] h2{line-height:1.25;}
+section[data-size].cover{--font-size-presenter:26px;}
+section[data-size] footer{font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
+section[data-size].cover footer{bottom:9px;font-size:10px;line-height:1.2;font-weight:var(--font-weight-bold);color:#5A6A8A;}
+section[data-size].closing footer{bottom:62px;color:var(--color-text-footer);}
+section[data-size] .note{font-size:24pt;}
+body>svg[data-marpit-svg]{position:fixed;inset:0 0 45px;width:100%;height:calc(100% - 45px);}
+#ot-toolbar {position:fixed;bottom:0;left:0;right:0;height:45px;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;font:14px Pretendard,'Apple SD Gothic Neo',sans-serif;color:#002060;z-index:100;border-top:2px solid #8FAADC;}
+#ot-toolbar button {font:inherit;padding:4px 12px;background:white;color:#002060;border:1px solid #4472C4;cursor:pointer;}
+#ot-toolbar button:disabled{opacity:.4;}
+section [contenteditable]:focus{outline:2px solid #8FAADC;outline-offset:2px;}
+section [contenteditable="plaintext-only"]{cursor:text;min-width:1em;}
+section table td{height:23px;}
+section .ot-options label{display:flex;gap:12px;align-items:center;margin:8px 0 15px 34px;}
+section .ot-options input{width:22px;height:22px;flex:none;accent-color:#002060;}
+section .ot-options{margin-bottom:16px;}
+section .ot-questions p{margin:0 0 28px 34px;font-size:27px;line-height:1.45;}
+section .ot-source,section.ot-dense .ot-source{font-size:16pt;line-height:1.4;margin-top:8px;}
+section.ot-schedule h1,section.ot-dense h1{margin-bottom:42px;}
+section.ot-schedule table,section.ot-dense table{width:94%;font-size:18pt;margin-bottom:12px;}
+section.ot-schedule th,section.ot-schedule td,section.ot-dense th,section.ot-dense td{padding:1px 12px;line-height:1.15;height:22px;}
+section.ot-dense p{font-size:18pt;line-height:1.5;margin-bottom:12px;}
+section .ot-intro-prompts p{font-size:18pt;margin-bottom:8px;}
+section.ot-official p{font-size:18pt;line-height:1.65;margin-bottom:20px;}
+section.ot-official h2{font-size:24pt;line-height:1.25;margin-bottom:20px;}
+section.ot-official .ot-source{font-size:16pt;}
+section.ot-greeting > p{margin-bottom:24px;}
+section.ot-greeting > .ot-source{margin-top:24px;margin-bottom:0;font-size:14pt;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
+section.ot-operating p{font-size:18pt;line-height:1.5;margin-bottom:15px;}
+section.ot-operating h2{margin-bottom:12px;}
+section.ot-operating > .ot-source{margin-top:36px;margin-bottom:0;font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
+section.ot-record table{table-layout:fixed;}
+section.ot-record th,section.ot-record td{padding:8px 12px;line-height:1.4;text-align:left;vertical-align:top;}
+section.ot-record > table + p{margin-top:36px;}
+section.ot-record > .ot-source{margin-top:8px;margin-bottom:0;font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
+section .ot-restaurants{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:14px;}
+section .ot-restaurants img{width:100%;height:285px;object-fit:cover;display:block;margin-bottom:10px;}
+section .ot-restaurants h2{margin-left:0;}
+section .ot-restaurants p{margin:5px 0;font-size:18pt;}
+section.ot-goals > p{margin-bottom:32px;line-height:1.6;}
+section.ot-goals .ot-options{padding-top:32px;}
+section.ot-goals .ot-options label{margin-bottom:22px;}
+section.ot-bridge h2{margin-bottom:18px;}
+section.ot-bridge > h2{margin-top:16px;}
+section.ot-bridge > p{margin-bottom:20px;}
+section.ot-bridge .cols p{margin-bottom:20px;line-height:1.5;}
+section.ot-bridge .cols ul{margin:0;padding-left:28px;}
+section.ot-bridge .cols li{margin-bottom:20px;line-height:1.5;}
+section.ot-bridge .cols li:last-child{margin-bottom:8px;}
+section.ot-bridge > p + .cols{padding-top:16px;}
+section.ot-icebreaker > .ot-question{margin:56px 0 0;font-size:24pt;line-height:1.5;font-weight:var(--font-weight-heavy);text-align:center;}
+section.ot-icebreaker > .ot-source{position:absolute;left:var(--size-padding-x);right:var(--size-padding-x);bottom:72px;margin:0;font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
+section.ot-icebreaker > .ot-source a{color:inherit;}
+section button[data-add-row]{appearance:none;background:white;color:#002060;border:1px solid #4472C4;font:16pt Pretendard,sans-serif;padding:5px 12px;cursor:pointer;margin-left:3%;}
+}
+@media print {#ot-toolbar,section button{display:none!important;}body>svg{display:block!important;}}
