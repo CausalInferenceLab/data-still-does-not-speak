@@ -25,7 +25,7 @@ author: "권준혁"
 
 **책을 기반으로 주차별 챕터 단위로 진행하고, 매주 그 챕터를 맡는 오너가 있습니다.** 나머지는 오늘 함께 정하겠습니다.
 
-<div class="ot-options"><label><input type="checkbox"><span>서로 조금 친해지기</span></label><label><input type="checkbox"><span>각자의 목표 한 줄</span></label><label><input type="checkbox"><span>그라운드 룰 (W2–W5 시범 적용, W6에서 다시 보기)</span></label><label><input type="checkbox"><span>챕터 오너와 일정 확인</span></label><label><input type="checkbox"><span>진행 방향 합의</span></label></div>
+<div class="ot-options"><label><input type="checkbox" disabled><span>서로 조금 친해지기</span></label><label><input type="checkbox" disabled><span>각자의 목표 한 줄</span></label><label><input type="checkbox" disabled><span>그라운드 룰 (W2–W5 시범 적용, W6에서 다시 보기)</span></label><label><input type="checkbox" disabled><span>챕터 오너와 일정 확인</span></label><label><input type="checkbox" disabled><span>진행 방향 합의</span></label></div>
 
 ---
 
@@ -114,10 +114,9 @@ author: "권준혁"
 
 함께 읽을 분들과 이름으로 가볍게 인사해요.
 
-<table data-add-rows="nicknames"><thead><tr><th>이름</th><th>LinkedIn</th></tr></thead><tbody><tr><td>권준혁</td><td><a href="https://www.linkedin.com/in/junhyuck-kwon" target="_blank" rel="noopener" aria-label="권준혁 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>김아영</td><td><a href="https://www.linkedin.com/in/ahzerokim/" target="_blank" rel="noopener" aria-label="김아영 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>김윤지</td><td>미등록</td></tr><tr><td>김형철</td><td><a href="https://www.linkedin.com/in/hyoungcheolkim" target="_blank" rel="noopener" aria-label="김형철 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>박주연</td><td><a href="https://www.linkedin.com/in/juyeonpark0321" target="_blank" rel="noopener" aria-label="박주연 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>박혜민</td><td>미등록</td></tr><tr><td>이민옥</td><td><a href="https://www.linkedin.com/in/minok-lee-640124219/" target="_blank" rel="noopener" aria-label="이민옥 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>이예빈</td><td>미등록</td></tr><tr><td>정성준</td><td><a href="https://www.linkedin.com/in/%EC%84%B1%EC%A4%80-%EC%A0%95-31868633a" target="_blank" rel="noopener" aria-label="정성준 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>최윤정</td><td>미등록</td></tr></tbody></table>
-<button type="button" data-add-row="nicknames">+ 행 추가</button>
+<table><thead><tr><th>이름</th><th>LinkedIn</th></tr></thead><tbody><tr><td>권준혁</td><td><a href="https://www.linkedin.com/in/junhyuck-kwon" target="_blank" rel="noopener" aria-label="권준혁 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>김아영</td><td><a href="https://www.linkedin.com/in/ahzerokim/" target="_blank" rel="noopener" aria-label="김아영 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>김윤지</td><td>미등록</td></tr><tr><td>김형철</td><td><a href="https://www.linkedin.com/in/hyoungcheolkim" target="_blank" rel="noopener" aria-label="김형철 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>박주연</td><td><a href="https://www.linkedin.com/in/juyeonpark0321" target="_blank" rel="noopener" aria-label="박주연 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>박혜민</td><td>미등록</td></tr><tr><td>이민옥</td><td><a href="https://www.linkedin.com/in/minok-lee-640124219/" target="_blank" rel="noopener" aria-label="이민옥 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>이예빈</td><td>미등록</td></tr><tr><td>정성준</td><td><a href="https://www.linkedin.com/in/%EC%84%B1%EC%A4%80-%EC%A0%95-31868633a" target="_blank" rel="noopener" aria-label="정성준 LinkedIn 프로필">프로필 보기</a></td></tr><tr><td>최윤정</td><td>미등록</td></tr></tbody></table>
 
-<p class="ot-source">이름·LinkedIn·목표 한 줄은 Google 폼으로 수집합니다. 입력 링크는 추후 공유합니다.<br>응답을 모아 빌더가 한 번에 PR로 반영합니다. LinkedIn은 선택 항목입니다.</p>
+<p class="ot-source">이름·LinkedIn·목표 한 줄은 Google 폼으로 수집합니다. 입력 링크는 추후 공유합니다.<br>응답을 모아 빌더가 한 번에 PR로 반영합니다.</p>
 
 ---
 <!-- _class: compact -->
@@ -163,7 +162,6 @@ author: "권준혁"
 
 <p>관찰한 사실과 해석을 구분하고, 지금 말할 수 있는 범위와 남은 질문을 함께 기록합니다.</p>
 
-<p class="ot-source">바탕: 프로젝트 LinkedIn 소개글의 만족도 사례 · 기록 내용은 설명용으로 재구성</p>
 
 
 ---
@@ -172,8 +170,7 @@ author: "권준혁"
 
 <p>오늘 고른 안은 W2–W5 시범 적용, W6에서 다시 보기</p>
 
-<table data-add-rows="rules"><thead><tr><th>항목</th><th>합의 내용 / 상태</th></tr></thead><tbody><tr><td>공유 시점 / 마감</td><td>모임 2일 전 · 화요일 자정(24:00)까지</td></tr><tr><td>기록 장소</td><td>GitHub 레포지토리</td></tr><tr><td>카메라 오픈</td><td>카메라 켜고 참여하기</td></tr><tr><td>불참 / 지원</td><td>보류 · 추후 논의</td></tr><tr><td>연휴 주간 (12/24, 12/31)</td><td>보류 · 추후 논의</td></tr><tr><td>남는 챕터 담당</td><td>배정 완료</td></tr></tbody></table>
-<button type="button" data-add-row="rules">+ 행 추가</button>
+<table><thead><tr><th>항목</th><th>합의 내용 / 상태</th></tr></thead><tbody><tr><td>공유 시점 / 마감</td><td>모임 2일 전 · 화요일 자정(24:00)까지</td></tr><tr><td>기록 장소</td><td>GitHub 레포지토리</td></tr><tr><td>카메라 오픈</td><td>카메라 켜고 참여하기</td></tr><tr><td>불참 / 지원</td><td>보류 · 추후 논의</td></tr><tr><td>연휴 주간 (12/24, 12/31)</td><td>보류 · 추후 논의</td></tr><tr><td>남는 챕터 담당</td><td>배정 완료</td></tr></tbody></table>
 
 ---
 
@@ -195,16 +192,15 @@ author: "권준혁"
 
 "14주 뒤 나는 ______ 앞에서 ______를 물을 수 있게 되고 싶다."
 
-<table data-add-rows="goals"><thead><tr><th>이름</th><th>내 목표 한 줄</th></tr></thead><tbody><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
-<button type="button" data-add-row="goals">+ 행 추가</button>
+<table><thead><tr><th>이름</th><th>내 목표 한 줄</th></tr></thead><tbody><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
 
-<p class="ot-source">이름과 목표 한 줄은 Google 폼에 남겨주세요. 입력 링크는 추후 공유합니다.<br>응답을 모아 표에 반영하고, W14 회고에서 다시 열어봅니다.</p>
+<p class="ot-source">이름과 목표 한 줄은 Google 폼에 남겨주세요.<br>응답을 모아 표에 반영하고, W14 회고에서 다시 열어봅니다.</p>
 
 ---
 
 # 11. 마무리 · 다음 주 W2 (10/15) 준비
 
-<div class="ot-options"><label><input type="checkbox"><span>Ch1–2 읽어 오기</span></label><label><input type="checkbox"><span>코드 환경 준비: Python 권장</span></label><label><input type="checkbox"><span>이번 주 연습문제 또는 비즈니스 사례를 살펴보고, 합의한 마감까지 러너 기록지 작성하기</span></label></div>
+<div class="ot-options"><label><input type="checkbox" disabled><span>Ch1–2 읽어 오기</span></label><label><input type="checkbox" disabled><span>코드 환경 준비: Python 권장</span></label><label><input type="checkbox" disabled><span>이번 주 연습문제 또는 비즈니스 사례를 살펴보고, 합의한 마감까지 러너 기록지 작성하기</span></label></div>
 
 <p><a href="https://github.com/BuissonFlorent/BehavioralDataAnalysis">저자 저장소</a></p>
 
