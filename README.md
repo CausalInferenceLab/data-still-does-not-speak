@@ -1,8 +1,6 @@
-## [OT 슬라이드 바로 보기](https://causalinferencelab.github.io/data-still-does-not-speak/ot-live/)
-
-[전체 슬라이드·보고서 보기](https://causalinferencelab.github.io/data-still-does-not-speak/) · [러너 시작 안내](START_HERE.md)
-
 ![데이터는 여전히 말하지 않는다 프로젝트 소개](project-introduction.png)
+
+([발표 자료](https://causalinferencelab.github.io/data-still-does-not-speak/ot-live/))
 
 > **처음 오셨나요? 어디서 시작할지 찾아보세요.**
 >
