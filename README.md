@@ -273,7 +273,7 @@ ChatGPT·Claude·Gemini 등 AI 도구를 활용할 수 있습니다. 코드와 �
 
 ## 발표 슬라이드 작성
 
-마크다운으로 Causal-Lab 디자인의 HTML/PDF 발표 자료를 만들 수 있습니다. [작성 안내](SLIDES.md)와 [디자인 규칙](DESIGN.md)을 참고하세요.
+마크다운으로 Causal-Lab 디자인의 HTML 발표 자료를 만들 수 있습니다. [작성 안내](SLIDES.md)와 [디자인 규칙](DESIGN.md)을 참고하세요.
 
 
 ## 데이터셋 후보 보고서

@@ -32,16 +32,13 @@ const decks = readdirSync("slides")
       dir: d,
       title: pick("title") ?? d,
       presenter: pick("presenter") ?? "",
-      pdf: existsSync(join("dist", d, "index.pdf")),
     };
   });
 
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const rows = decks
   .map(
-    (d) => `<li><a href="./${d.dir}/">${esc(d.title)}</a>${d.presenter ? `<span>${esc(d.presenter)}</span>` : ""}${
-      d.pdf ? ` <a class="pdf" href="./${d.dir}/index.pdf">PDF</a>` : ""
-    }</li>`
+    (d) => `<li><a href="./${d.dir}/">${esc(d.title)}</a>${d.presenter ? `<span>${esc(d.presenter)}</span>` : ""}</li>`
   )
   .join("\n");
 const reportRows = reports.map((r) => `<li><a href="./reports/${r.dir}/">${esc(r.title)}</a></li>`).join("\n");
@@ -65,7 +62,6 @@ li{font-size:19px;margin:0 0 14px}
 li a{color:var(--color-text-primary);font-weight:700;text-decoration:none}
 li a:hover,li a:focus-visible{color:var(--color-brand-navy);text-decoration:underline}
 li span{color:var(--color-text-muted);margin-left:12px;font-size:16px}
-a.pdf{font-size:13px;font-weight:700;color:var(--color-brand-navy);border:1px solid var(--color-brand-blue);padding:1px 6px;margin-left:10px}
 footer{position:fixed;bottom:0;left:0;right:0;height:36px;background:var(--color-brand-blue)}
 </style></head><body>
 <div class="band"></div>

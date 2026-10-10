@@ -3,7 +3,6 @@
 ## 자료 보기와 저장
 
 - [Pages에서 OT 보기](https://causalinferencelab.github.io/data-still-does-not-speak/ot-live/): 하단 이전·다음 버튼 또는 방향키·Page Up/Down으로 이동합니다. Home은 첫 장, End는 마지막 장입니다.
-- [PDF 저장](https://causalinferencelab.github.io/data-still-does-not-speak/ot-live/index.pdf): PDF 화면의 다운로드 버튼으로 저장할 수 있습니다.
 - [GitHub에서 원본 내용 읽기](../slides/ot-live/index.md): 문서 형식이며, 발표 화면은 Pages에서 봅니다.
 - HTML을 보관하려면 OT 화면에서 브라우저의 **페이지 다른 이름으로 저장 → 웹페이지, 전체**를 선택하고 HTML과 생성된 이미지 폴더를 함께 보관합니다.
 
@@ -16,17 +15,17 @@
 3. **Commit changes**로 작업 브랜치에 저장하고 **Contribute → Open pull request**로 원본 `main`에 제안합니다.
 4. 검토·병합 후 배포가 완료되면 Pages에 반영됩니다. PR을 여는 것만으로는 반영되지 않습니다.
 
-자세한 화면별 절차는 [제출 안내](../CONTRIBUTING.md)를 참고하세요. 생성된 HTML·PDF는 직접 커밋하지 않습니다.
+자세한 화면별 절차는 [제출 안내](../CONTRIBUTING.md)를 참고하세요. 생성된 HTML는 직접 커밋하지 않습니다.
 
 ## 유지보수자 빌드
 
 - 원본: `slides/ot-live/index.md`
 - 전용 화면 스타일: `slides/ot-live/live.css`
-- 생성 결과: `dist/ot-live/index.html`, `dist/ot-live/index.pdf`
+- 생성 결과: `dist/ot-live/index.html`
 - 전체 빌드: `npm run build`
 - OT HTML만 다시 생성: `npm run build:ot-live` (기존 의존성이 설치된 환경)
 
-화면 전용 CSS는 HTML 발표용입니다. PDF는 공통 Marp 테마로 생성하는 보조 출력입니다.
+현재 자료는 HTML로만 공개합니다. PDF 생성과 공개 다운로드를 중단했습니다. 기존 PDF는 OT 전용 HTML 스타일 없이 공통 Marp 테마로 다시 변환되어 화면 배치가 달라졌습니다. PDF 재개 시에는 HTML과 공유하는 스타일·인쇄 레이아웃·폰트 로딩을 점검하고 페이지별 시각 비교를 통과해야 합니다.
 
 ## 이름·LinkedIn·목표 한 줄
 
