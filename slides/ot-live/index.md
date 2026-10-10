@@ -178,7 +178,7 @@ author: "권준혁"
 
 # 9. 14주 뼈대 · 정해진 것
 
-매주 목요일 20:00–22:00 · 디스코드 Room AV · 날짜는 예정
+매주 목요일 20:00–22:00 · 디스코드 Room AV
 
 <table><thead><tr><th>주차</th><th>날짜</th><th>챕터</th><th>챕터 오너</th><th>준비 자료</th></tr></thead><tbody><tr><td>W1</td><td>10/8</td><td>OT</td><td>—</td><td>—</td></tr><tr><td>W2</td><td>10/15</td><td>Ch1–2 · 빌더 시범</td><td>권준혁</td><td>사례</td></tr><tr><td>W3</td><td>10/22</td><td>Ch3 인과 다이어그램</td><td>이예빈</td><td>연습문제</td></tr><tr><td>W4</td><td>10/29</td><td>Ch4 다이어그램 만들기</td><td>정성준</td><td>연습문제</td></tr><tr><td>W5</td><td>11/5</td><td>Ch5 교란 해소</td><td>이민옥</td><td>사례</td></tr><tr><td>W6</td><td>11/12</td><td>매지컬 위크 ① 네트워킹</td><td>—</td><td>없음</td></tr><tr><td>W7</td><td>11/19</td><td>Ch6 결측 데이터</td><td>김아영</td><td>연습문제</td></tr><tr><td>W8</td><td>11/26</td><td>Ch7 부트스트랩</td><td>김윤지</td><td>사례</td></tr><tr><td>W9</td><td>12/3</td><td>Ch8 실험 설계 기초</td><td>박혜민</td><td>연습문제</td></tr><tr><td>W10</td><td>12/10</td><td>Ch9 층화 무작위 배정</td><td>최윤정</td><td>연습문제</td></tr><tr><td>W11</td><td>12/17</td><td>Ch10 군집 무작위 배정</td><td>김형철</td><td>연습문제</td></tr><tr><td>W12</td><td>12/24</td><td>Ch11 조절효과</td><td>박주연</td><td>연습문제</td></tr><tr><td>W13</td><td>12/31</td><td>Ch12 매개 · 도구변수</td><td>권준혁</td><td>연습문제</td></tr><tr><td>W14</td><td>2027/1/7</td><td>매지컬 위크 ② 해커톤 · 회고</td><td>—</td><td>—</td></tr></tbody></table>
 
