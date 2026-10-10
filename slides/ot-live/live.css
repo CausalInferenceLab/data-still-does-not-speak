@@ -9,10 +9,8 @@ section[data-size].closing footer{bottom:62px;color:var(--color-text-footer);}
 section[data-size] .note{font-size:24pt;}
 body>svg[data-marpit-svg]{position:fixed;inset:0 0 45px;width:100%;height:calc(100% - 45px);}
 #ot-toolbar {position:fixed;bottom:0;left:0;right:0;height:45px;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;font:14px Pretendard,'Apple SD Gothic Neo',sans-serif;color:#002060;z-index:100;border-top:2px solid #8FAADC;}
-#ot-toolbar button {font:inherit;padding:4px 12px;background:white;color:#002060;border:1px solid #4472C4;cursor:pointer;}
+#ot-toolbar button,#ot-toolbar a {font:inherit;padding:4px 12px;background:white;color:#002060;border:1px solid #4472C4;cursor:pointer;text-decoration:none;}
 #ot-toolbar button:disabled{opacity:.4;}
-section [contenteditable]:focus{outline:2px solid #8FAADC;outline-offset:2px;}
-section [contenteditable="plaintext-only"]{cursor:text;min-width:1em;}
 section table td{height:23px;}
 section .ot-options label{display:flex;gap:12px;align-items:center;margin:8px 0 15px 34px;}
 section .ot-options input{width:22px;height:22px;flex:none;accent-color:#002060;}
@@ -54,6 +52,6 @@ section.ot-bridge > p + .cols{padding-top:16px;}
 section.ot-icebreaker > .ot-question{margin:56px 0 0;font-size:24pt;line-height:1.5;font-weight:var(--font-weight-heavy);text-align:center;}
 section.ot-icebreaker > .ot-source{position:absolute;left:var(--size-padding-x);right:var(--size-padding-x);bottom:72px;margin:0;font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
 section.ot-icebreaker > .ot-source a{color:inherit;}
-section button[data-add-row]{appearance:none;background:white;color:#002060;border:1px solid #4472C4;font:16pt Pretendard,sans-serif;padding:5px 12px;cursor:pointer;margin-left:3%;}
 }
+@media screen and (max-width:480px) {#ot-toolbar{font-size:12px;gap:6px;}#ot-toolbar button,#ot-toolbar a{padding:4px 6px;}}
 @media print {#ot-toolbar,section button{display:none!important;}body>svg{display:block!important;}}
