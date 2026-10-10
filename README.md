@@ -1,5 +1,17 @@
 ![데이터는 여전히 말하지 않는다 프로젝트 소개](project-introduction.png)
 
+> **처음 오셨나요? 어디서 시작할지 찾아보세요.**
+>
+> | 하고 싶은 일 | 가는 곳 |
+> | --- | --- |
+> | GitHub이 처음이라 AI 튜터와 단계별로 제출 연습 | [TUTOR.md](TUTOR.md) |
+> | 내 주차 과제 제출 | [assignments/README.md](assignments/README.md) · 처음 해보면 [TUTOR.md](TUTOR.md) |
+> | 챕터 오너로 발표 내용 정리 | [chapters/README.md](chapters/README.md) |
+> | 발표 슬라이드 작성 | [SLIDES.md](SLIDES.md) · [templates/deck.md](templates/deck.md) |
+> | 데이터셋 후보 보고서 읽기 | [reports/README.md](reports/README.md) |
+> | 슬라이드 · 보고서 Pages 보기 | [GitHub Pages](https://causalinferencelab.github.io/data-still-does-not-speak/) (PR이 main에 머지된 뒤 반영) |
+> | 저장소 기여 규칙 (git 경로 포함) | [CONTRIBUTING.md](CONTRIBUTING.md) |
+
 # 데이터는 여전히 말하지 않는다
 
 **AI가 분석하는 시대, 우리는 무엇을 질문하고 판단해야 하는가**
@@ -242,8 +254,8 @@ ChatGPT·Claude·Gemini 등 AI 도구를 활용할 수 있습니다. 코드와 �
 
 정규 러너 참여는 [프로젝트 페이지](https://pseudo-lab.com/projects/25cd8f79-6911-4ed9-baf0-446b90e62c26?tab=home)에서 안내합니다. 저장소의 자료는 누구나 열람하고 질문·오류 제보·보완 제안을 남길 수 있습니다.
 
-- **질문·오류 제보:** [Issue 작성](https://github.com/Pseudo-Lab/data-still-does-not-speak/issues/new). 해당 자료와 궁금한 점을 적어주세요. 실행 오류는 사용 환경과 재현 순서를 함께 알려주세요.
-- **문서·코드 개선:** 저장소를 Fork한 뒤 [Pull Request](https://github.com/Pseudo-Lab/data-still-does-not-speak/pulls)로 제안해주세요. 바꾼 이유와 확인한 내용을 설명하면 함께 리뷰하기 좋습니다.
+- **질문·오류 제보:** [Issue 작성](https://github.com/CausalInferenceLab/data-still-does-not-speak/issues/new). 해당 자료와 궁금한 점을 적어주세요. 실행 오류는 사용 환경과 재현 순서를 함께 알려주세요.
+- **문서·코드 개선:** 저장소를 Fork한 뒤 [Pull Request](https://github.com/CausalInferenceLab/data-still-does-not-speak/pulls)로 제안해주세요. 바꾼 이유와 확인한 내용을 설명하면 함께 리뷰하기 좋습니다.
 
 ### 출처와 라이선스
 
