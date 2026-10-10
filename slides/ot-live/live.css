@@ -33,7 +33,7 @@ section.ot-operating p{font-size:18pt;line-height:1.5;margin-bottom:15px;}
 section.ot-operating h2{margin-bottom:12px;}
 section.ot-operating > .ot-source{margin-top:36px;margin-bottom:0;font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
 section.ot-record table{table-layout:fixed;}
-section.ot-record table th,section.ot-record table td{padding:8px 12px;line-height:1.4;text-align:left;vertical-align:top;}
+section[data-size].ot-record table th,section[data-size].ot-record table td{padding:8px 12px;line-height:1.4;text-align:left;vertical-align:top;}
 section.ot-record > table + p{margin-top:36px;}
 section.ot-record > .ot-source{margin-top:8px;margin-bottom:0;font-size:14pt;line-height:1.4;font-weight:var(--font-weight-regular);color:var(--color-text-footer);}
 section .ot-restaurants{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:14px;}
