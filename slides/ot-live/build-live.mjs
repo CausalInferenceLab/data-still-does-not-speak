@@ -7,7 +7,7 @@ const root=path.resolve(base,'../..');
 const output=path.join(root,'dist/ot-live/index.html');
 execFileSync(path.join(root,'node_modules/.bin/marp'),['--no-stdin','--no-config','--html','--theme',path.join(root,'themes/causal-lab.css'),'--template','bare',path.join(base,'index.md'),'-o',output],{cwd:root,stdio:'inherit'});
 let html=readFileSync(output,'utf8').replace('<html lang="C">','<html lang="ko">').replace(/lang="C"/g,'lang="ko"');
-const toolbar=`<div id="ot-toolbar"><button id="ot-prev">← 이전</button><span id="ot-page" aria-live="polite"></span><button id="ot-next">다음 →</button><a href="./index.pdf" download>PDF 저장</a><a href="./guide.html" target="_blank" rel="noopener">사용 안내</a></div>`;
+const toolbar=`<div id="ot-toolbar"><button id="ot-prev">← 이전</button><span id="ot-page" aria-live="polite"></span><button id="ot-next">다음 →</button><a href="./guide.html" target="_blank" rel="noopener">사용 안내</a></div>`;
 html=html.replace('</head>','<style id="ot-live-style">'+readFileSync(path.join(base,'live.css'),'utf8')+'</style></head>');
 html=html.replace('</body>',toolbar+'<script id="ot-live-script">'+readFileSync(path.join(base,'live-editor.js'),'utf8')+'</script></body>');
 writeFileSync(output,html);

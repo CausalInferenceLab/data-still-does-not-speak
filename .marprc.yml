@@ -1,4 +1,4 @@
-# Marp CLI 설정 — `npm run build` / `npm run build:pdf`
+# Marp CLI 설정 — `npm run build` (HTML 공개)
 inputDir: ./slides
 output: ./dist
 themeSet: ./themes

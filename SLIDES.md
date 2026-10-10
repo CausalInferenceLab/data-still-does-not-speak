@@ -1,7 +1,9 @@
 # Causal-Lab 슬라이드 템플릿
 
-마크다운으로 발표 자료를 쓰면 Causal-Lab 디자인이 적용된 HTML과 PDF가 만들어지는 템플릿입니다.
+마크다운으로 발표 자료를 쓰면 Causal-Lab 디자인이 적용된 HTML이 만들어지는 템플릿입니다.
 GitHub Actions가 빌드해서 GitHub Pages에 올립니다.
+
+현재는 HTML로만 공개합니다. PDF 변환은 화면 배치가 달라지는 문제로 중단했으며, HTML과의 페이지별 비교를 통과한 뒤 재개를 검토합니다.
 
 OT 자료를 보거나 수정하려면 [OT 사용 안내](docs/ot-live.md)를 참고하세요. 공개 HTML은 읽기 전용이며 원본 수정 PR이 병합된 뒤 다시 배포됩니다.
 
@@ -28,7 +30,7 @@ OT 자료를 보거나 수정하려면 [OT 사용 안내](docs/ot-live.md)를 �
 
 ## 파일 배치 자동 검사
 
-PR의 CI와 HTML·PDF·OT·보고서 빌드, 로컬 미리보기 시작 전에 같은 파일 배치 검사를 실행합니다.
+PR의 CI와 HTML·OT·보고서 빌드, 로컬 미리보기 시작 전에 같은 파일 배치 검사를 실행합니다.
 
 - 발표 폴더에는 파일 이름이 정확히 `index.md`인 파일이 있어야 합니다.
 - `slides/<발표 폴더>/index.md` 외의 마크다운은 허용하지 않습니다. `README.md`, `INDEX.MD`, `img/notes.md`나 `.markdown`·`.mdown`·`.markdn` 파일도 차단합니다.
@@ -55,7 +57,7 @@ GitHub 웹에서 제출하는 순서(Fork, branch, 파일 올리기, PR)는 [TUT
 
 - **VS Code**: 추천 확장(Marp for VS Code)을 설치하면 이 테마로 바로 미리보기 됩니다.
 - **로컬 서버**: `npm ci` 후 `npm run dev`
-- **전체 빌드**: `npm run build` → `dist/`에 덱별 `index.html`, `index.pdf`와 목록 페이지 (Chrome 필요)
+- **전체 빌드**: `npm run build` → `dist/`에 덱별 `index.html`과 목록 페이지
 
 러너와 챕터 오너는 설치 없이 GitHub 웹만으로 제출할 수 있습니다. 로컬 미리보기는 선택입니다.
 

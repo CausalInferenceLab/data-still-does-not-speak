@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -70,7 +70,7 @@ for (const path of [
   });
 }
 
-for (const command of ['build', 'build:pdf', 'dev', 'build:ot-live', 'build:reports']) {
+for (const command of ['build', 'dev', 'build:ot-live', 'build:reports']) {
   test(`${command} also blocks invalid Markdown before its build step`, () => {
     const result = build({ 'slides/demo/index.md': deck, 'slides/demo/README.md': '# Notes\n' }, command);
     assert.equal(result.status, 1, result.stdout + result.stderr);
@@ -78,3 +78,28 @@ for (const command of ['build', 'build:pdf', 'dev', 'build:ot-live', 'build:repo
     assert.equal(result.html, null);
   });
 }
+
+test('OT and listing publish HTML without PDF download links', () => {
+  const cwd = mkdtempSync(join(tmpdir(), 'slides-html-only-'));
+  try {
+    for (const name of ['package.json', '.marprc.yml', 'scripts', 'tokens', 'themes', 'assets', 'slides']) {
+      cpSync(join(root, name), join(cwd, name), { recursive: true });
+    }
+    symlinkSync(join(root, 'node_modules'), join(cwd, 'node_modules'), 'dir');
+    mkdirSync(join(cwd, 'dist/ot-live'), { recursive: true });
+    writeFileSync(join(cwd, 'dist/ot-live/index.pdf'), 'old local PDF');
+    const result = spawnSync('npm', ['run', 'build'], { cwd, encoding: 'utf8', timeout: 30000 });
+    assert.equal(result.status, 0, result.stdout + result.stderr);
+    assert.equal(existsSync(join(cwd, 'dist/example/index.pdf')), false);
+    assert.equal(readFileSync(join(cwd, 'dist/ot-live/index.pdf'), 'utf8'), 'old local PDF');
+    for (const name of ['dist/index.html', 'dist/ot-live/index.html', 'dist/ot-live/guide.html']) {
+      const html = readFileSync(join(cwd, name), 'utf8');
+      assert.doesNotMatch(html, /href=["'][^"']*\.pdf/i);
+    }
+    const html = readFileSync(join(cwd, 'dist/ot-live/index.html'), 'utf8');
+    assert.match(html, /<section\b/);
+    assert.match(html, /href=".\/guide.html"/);
+  } finally {
+    rmSync(cwd, { recursive: true, force: true });
+  }
+});
