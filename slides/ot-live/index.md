@@ -190,11 +190,11 @@ author: "권준혁"
 
 # 10. 내 목표 한 줄
 
-"14주 뒤 나는 ______ 앞에서 ______를 물을 수 있게 되고 싶다."
+14주 뒤 나는 ______ 앞에서 ______를 물을 수 있게 되고 싶다.
 
-<table style="font-size:20px;line-height:1.35"><colgroup><col style="width:12%"><col style="width:88%"></colgroup><thead><tr><th>이름</th><th>내 목표 한 줄</th></tr></thead><tbody><tr><td>권준혁</td><td>나의 오답들을 행동 모델링을 통해 감정 기반 의사결정이 아닌 구조화된 시스템 기반으로 판단할 수 있는 사람이 되고 싶다.</td></tr><tr><td>김아영</td><td>14주 뒤 나는 클로드에게 주제에 맞는 모델과 가공된 데이터들을 제공해 주체적인 대화를 나누고 싶다</td></tr><tr><td>김윤지</td><td>“14주 뒤 나는 AI가 내놓은 분석 결과 앞에서 ’이 결론이 정말 데이터가 말하는 것인지'를 물을 수 있게 되고 싶다.”</td></tr><tr><td>김형철</td><td>14주 뒤, 나는 타인으로부터 '합리적인 사람'이라는 말을 듣는 사람이 되고 싶다</td></tr><tr><td>박주연</td><td>미응답</td></tr><tr><td>박혜민</td><td>1. 행동분석 이론을 실습하며 문제정의-가설-검증을 명확히 해본 경험을 가져가고 싶다.<br>2. 챕터를 아우를 수 있는 하나의 실험(프로젝트)을 진행해보고 싶다.</td></tr><tr><td>이민옥</td><td>스쿼드원 앞에서 이게 진짜 우리가 만든 기능으로 인한 개선인지</td></tr><tr><td>이예빈</td><td>14주 뒤 나는 AI가 제안한 분석결과 앞에서 그 결론을 신뢰할 수 있는 근거와 한계를 물을 수 있게 되고 싶다.</td></tr><tr><td>정성준</td><td>14주 뒤 나는 의견 앞에서 근거를 답할 수 있게 되고 싶다.</td></tr><tr><td>최윤정</td><td>미응답</td></tr></tbody></table>
+<table style="font-size:20px;line-height:1.35;text-align:left"><colgroup><col style="width:12%"><col style="width:88%"></colgroup><thead><tr><th style="text-align:left">이름</th><th style="text-align:left">내 목표 한 줄</th></tr></thead><tbody><tr><td style="text-align:left">권준혁</td><td style="text-align:left">나의 오답들을 행동 모델링을 통해 감정 기반 의사결정이 아닌 구조화된 시스템 기반으로 판단할 수 있는 사람이 되고 싶다.</td></tr><tr><td style="text-align:left">김아영</td><td style="text-align:left">14주 뒤 나는 클로드에게 주제에 맞는 모델과 가공된 데이터들을 제공해 주체적인 대화를 나누고 싶다</td></tr><tr><td style="text-align:left">김윤지</td><td style="text-align:left">14주 뒤 나는 AI가 내놓은 분석 결과 앞에서 ’이 결론이 정말 데이터가 말하는 것인지'를 물을 수 있게 되고 싶다.</td></tr><tr><td style="text-align:left">김형철</td><td style="text-align:left">14주 뒤, 나는 타인으로부터 '합리적인 사람'이라는 말을 듣는 사람이 되고 싶다</td></tr><tr><td style="text-align:left">박주연</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">박혜민</td><td style="text-align:left">1. 행동분석 이론을 실습하며 문제정의-가설-검증을 명확히 해본 경험을 가져가고 싶다.<br>2. 챕터를 아우를 수 있는 하나의 실험(프로젝트)을 진행해보고 싶다.</td></tr><tr><td style="text-align:left">이민옥</td><td style="text-align:left">스쿼드원 앞에서 이게 진짜 우리가 만든 기능으로 인한 개선인지</td></tr><tr><td style="text-align:left">이예빈</td><td style="text-align:left">14주 뒤 나는 AI가 제안한 분석결과 앞에서 그 결론을 신뢰할 수 있는 근거와 한계를 물을 수 있게 되고 싶다.</td></tr><tr><td style="text-align:left">정성준</td><td style="text-align:left">14주 뒤 나는 의견 앞에서 근거를 답할 수 있게 되고 싶다.</td></tr><tr><td style="text-align:left">최윤정</td><td style="text-align:left"></td></tr></tbody></table>
 
-<p class="ot-source">Google 폼 응답과 빌더의 목표를 원문으로 반영했습니다. 미응답 목표는 추후 추가하며, W14 회고에서 다시 열어봅니다.</p>
+<p class="ot-source">Google 폼 응답과 빌더의 목표를 원문으로 반영했습니다. 비어 있는 목표는 추후 추가하며, W14 회고에서 다시 열어봅니다.</p>
 
 ---
 
