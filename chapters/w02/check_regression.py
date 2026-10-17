@@ -1,10 +1,27 @@
 """The editable examples reproduce the presentation on the same sample."""
 import importlib.util
+import gzip
+import sys
+from io import BytesIO
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "practice"))
+csv_spec = importlib.util.spec_from_file_location("data_io", ROOT / "practice/data_io.py")
+data_io = importlib.util.module_from_spec(csv_spec)
+csv_spec.loader.exec_module(data_io)
+# A browser decodes Content-Encoding before Python sees the response body.
+for body in [b"x,y\n1,2\n", gzip.compress(b"x,y\n1,2\n")]:
+    response = BytesIO(body)
+    response.headers = {"Content-Encoding": "gzip"}
+    with patch.object(data_io, "urlopen", return_value=response):
+        assert data_io.read_csv("https://example.test/data.csv").iloc[0].tolist() == [1, 2]
+assert len(data_io.read_csv(ROOT / "practice/data/chap1-stand_data.csv")) == 2400
+print("PASS: CSV loading for local files, browser-decoded HTTP, and compressed HTTP")
+
 spec = importlib.util.spec_from_file_location(
     "regression_lab", ROOT / "practice/regression_lab.py"
 )

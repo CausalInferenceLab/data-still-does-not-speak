@@ -24,6 +24,7 @@ with app.setup(hide_code=True):
     import statsmodels.formula.api as smf
 
     import marimo_slide_kit as kit
+    from practice.data_io import read_csv
     kit.configure()
     _study_theme = alt.theme.register("study_slides", enable=True)(lambda: {"config": {
         "font": "Apple SD Gothic Neo, Malgun Gothic, sans-serif",
@@ -169,8 +170,8 @@ def confounding():
 
 @app.cell(hide_code=True)
 def ice_data():
-    ice_stand_df = pd.read_csv(str(mo.notebook_location() / "practice" / "data" / "chap1-stand_data.csv"))
-    ice_survey_df = pd.read_csv(str(mo.notebook_location() / "practice" / "data" / "chap1-survey_data.csv"))
+    ice_stand_df = read_csv(mo.notebook_location() / "practice" / "data" / "chap1-stand_data.csv")
+    ice_survey_df = read_csv(mo.notebook_location() / "practice" / "data" / "chap1-survey_data.csv")
     mo.vstack([
         mo.md("""# 7. C마트의 매출 데이터
 
@@ -463,7 +464,7 @@ def _():
 
 @app.cell(hide_code=True)
 def _():
-    aircnc_ch2_df = pd.read_csv(str(mo.notebook_location() / "practice" / "data" / "AirCnC_MnM_exercises_data.csv"))
+    aircnc_ch2_df = read_csv(mo.notebook_location() / "practice" / "data" / "AirCnC_MnM_exercises_data.csv")
     mo.vstack([
         mo.vstack([mo.md('# 8. AirCnC 광고의 목표\n\n다음 숙소 예약 때 **Mansions & Manors(M&M)도 고려하게 만드는 광고**다.\n\n**합성 학습자료다. 행 수를 고유 고객 수로 읽지 않는다.**'), mo.accordion({"데이터 미리보기 · 처음 5행": mo.ui.table(aircnc_ch2_df.head(5), selection=None, page_size=2, show_data_types=False, style_cell=lambda _row, _column, _value: {"fontSize": "18px"}), "데이터 설명": mo.md("[저자 데이터 설명](https://raw.githubusercontent.com/BuissonFlorent/BehavioralDataAnalysis/master/Exercises%20and%20solutions/AirCnC_MnM_exercises_data_description.txt)  · 합성 학습 데이터다. 행 수를 고유 고객 수로 해석하지 않는다.")})], gap=1),
         mo.Html('<p class="mt-source">Buisson · Behavioral Data Analysis, Ch2</p>'),

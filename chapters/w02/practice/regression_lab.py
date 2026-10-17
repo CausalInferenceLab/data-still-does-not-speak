@@ -10,8 +10,9 @@ def _():
     import numpy as np
     import pandas as pd
     import statsmodels.formula.api as smf
+    from data_io import read_csv
 
-    return mo, pd, smf
+    return mo, pd, read_csv, smf
 
 
 @app.cell
@@ -28,10 +29,10 @@ def _(mo):
 
 
 @app.cell
-def _(mo, pd):
+def _(mo, read_csv):
     data_dir = mo.notebook_location() / "data"
-    stand = pd.read_csv(data_dir / "chap1-stand_data.csv")
-    ads = pd.read_csv(data_dir / "AirCnC_MnM_exercises_data.csv")
+    stand = read_csv(data_dir / "chap1-stand_data.csv")
+    ads = read_csv(data_dir / "AirCnC_MnM_exercises_data.csv")
     return ads, stand
 
 
