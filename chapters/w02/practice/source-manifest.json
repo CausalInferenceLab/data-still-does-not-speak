@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/BuissonFlorent/BehavioralDataAnalysis",
+  "commit": "1452368f9cc36e0a5292348598c49de11ef05672",
+  "files": {
+    "chap1-survey_data.csv": {
+      "bytes": 390463,
+      "sha256": "1472d4309b7959c89c62cfcd344506d2f1de6c4b630b20597e194eeb3ce4ad01"
+    },
+    "chap1-stand_data.csv": {
+      "bytes": 135475,
+      "sha256": "8791aed190ef745c08bc93a948225e0d89699477e0f87863ac04d3fed2d7a629"
+    },
+    "AirCnC_MnM_exercises_data.csv": {
+      "bytes": 163850,
+      "sha256": "6bf98ccad13eca4c65b2deed41145fc7be661fdcf5e293dba39be5e967761759"
+    }
+  }
+}

@@ -42,6 +42,9 @@ const rows = decks
   )
   .join("\n");
 const reportRows = reports.map((r) => `<li><a href="./reports/${r.dir}/">${esc(r.title)}</a></li>`).join("\n");
+const interactiveRows = existsSync("dist/w02/slides/index.html") && existsSync("dist/w02/lab/index.html")
+  ? `<li><a href="./w02/slides/">2주차 · 분석과 행동 데이터</a><span>체크박스와 그래프 조작</span></li>
+<li><a href="./w02/lab/">2주차 · 회귀 직접 실행</a><span>코드 수정과 재계산</span></li>` : "";
 
 writeFileSync(
   "dist/index.html",
@@ -69,6 +72,7 @@ footer{position:fixed;bottom:0;left:0;right:0;height:36px;background:var(--color
 ${reportRows ? `<h2>보고서</h2><ul>${reportRows}</ul>` : ""}
 <h2>발표 자료</h2>
 <ul>
+${interactiveRows}
 ${rows || "<li>아직 올라온 발표 자료가 없습니다. slides/ 폴더에 덱을 추가하세요.</li>"}
 </ul></main><footer></footer></body></html>`
 );

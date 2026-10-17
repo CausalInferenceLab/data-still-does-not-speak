@@ -1,0 +1,9 @@
+[runtime]
+auto_instantiate = true
+on_cell_change = "autorun"
+
+[display]
+theme = "light"
+
+[save]
+autosave = "off"

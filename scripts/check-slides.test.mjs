@@ -103,3 +103,26 @@ test('OT and listing publish HTML without PDF download links', () => {
     rmSync(cwd, { recursive: true, force: true });
   }
 });
+
+test('interactive listing requires both exported notebooks', () => {
+  const cwd = mkdtempSync(join(tmpdir(), 'slides-interactive-'));
+  try {
+    mkdirSync(join(cwd, 'tokens'));
+    mkdirSync(join(cwd, 'slides'));
+    writeFileSync(join(cwd, 'tokens/tokens.css'), '');
+    for (const name of [null, 'slides', 'lab']) {
+      if (name) {
+        mkdirSync(join(cwd, 'dist/w02', name), { recursive: true });
+        writeFileSync(join(cwd, 'dist/w02', name, 'index.html'), '<html></html>');
+      }
+      const result = spawnSync('node', [join(root, 'scripts/build-index.mjs')], { cwd, encoding: 'utf8' });
+      assert.equal(result.status, 0, result.stderr);
+      const html = readFileSync(join(cwd, 'dist/index.html'), 'utf8');
+      for (const app of ['slides', 'lab']) {
+        assert.equal(html.includes(`href="./w02/${app}/"`), name === 'lab');
+      }
+    }
+  } finally {
+    rmSync(cwd, { recursive: true, force: true });
+  }
+});

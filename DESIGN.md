@@ -1,5 +1,7 @@
 # DESIGN.md — Causal-Lab 슬라이드 디자인 시스템
 
+W02의 인터랙티브 발표는 [별도 marimo 자료](chapters/w02/README.md)로 제공한다. `chapters/w02/theme/marimo-slides.css`에서 navy 제목, peach·blue 2색 장식과 흰 본문 배경을 사용한다. 본문은 슬라이드 폭에 따라 28px 기준으로 조정하고, 표 셀은 18px, 그래프 눈금은 18px로 표시한다. 같은 노트북을 WebAssembly로 내보내 Pages의 `w02/slides/`와 `w02/lab/`에서 제공한다. 기존 Marp 테마와 토큰은 유지하며, Pages 빌드에 이 두 경로의 생성 단계를 추가했다.
+
 가짜연구소 인과추론팀(Causal-Lab) PPT 디자인을 마크다운 기반 템플릿으로 옮긴 문서입니다. 디자인만 담고 있으며 특정 발표 내용은 포함하지 않습니다.
 발표자는 디자인을 신경 쓰지 않고 **내용만 `.md`로 쓰면** 같은 디자인의 HTML이 만들어지는 것이 현재 공개 목표입니다. PDF는 화면 배치가 달라져 2026-10-11부터 생성을 중단했습니다.
 
